@@ -1,4 +1,4 @@
-## KMP
+# KMP
 
 # Overview
 
@@ -12,6 +12,8 @@ Space: O(m), A hash table `next` to build for matching.
 Time: O(n+m), build `next` with O(m) and match with O(n).
 
 # Implementation
+
+## C++
 
 ```c++
 
@@ -36,6 +38,8 @@ vector<int> KMP(const string& s, const string& p) {
 
 The build function is used to generate the `next` table, it is very similar with the matching part of KMP, since it basically matches itself. Note that the first 2 elements of `next` are always `0`, so we can iterate from `i = 1`.
 
+
+## Python3
 ```python
 
 def build(pat: str) nxt: List[int]:
@@ -51,8 +55,8 @@ def build(pat: str) nxt: List[int]:
 
 ```
 
+## C++
 ```c++
-
 vector<int> build(const string& pat) {
     vector<int> nxt(2);
     for (int i = 1, j = 0; i < pat.size(); i++) {
