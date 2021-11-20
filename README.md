@@ -7,6 +7,8 @@ To backup my memory of learnt knowledge...
 ### Algorithms
 
 - [KMP](./algo/KMP.md)
+- [Morris traversal](./algo/Morris_traversal.md)
+- [Patience Sort](./algo/Patience_sort.md)
 
 ### Data Structures
 
