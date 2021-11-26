@@ -13,3 +13,7 @@ To backup my memory of learnt knowledge...
 ### Data Structures
 
 - [DSU (Disjoint set)](./ds/DSU.md)
+
+### CP
+
+- [template](./cp/template.cpp)
