@@ -8,14 +8,10 @@ using namespace std;
 // set output width and fill char, only work for single value
 #define setowfill(w, f, what) cout << setw(w) << setfill(f) << what << endl
 
-// print vector of T
-template<typename T>
-ostream& operator<< (std::ostream& out, const vector<T>& v) {
-    for (auto &e: v) {
-        out << e << ",";
-    }
-    return out;
-}
+// logging (variadic)
+#define log(...) [](const auto&...x){ char c='='; cout<<#__VA_ARGS__<<" "; ((cout<<exchange(c,',')<<" "<<x),...); cout<<endl; }(__VA_ARGS__);
+// logging (iterable object)
+#define logv(v) [](const auto& v){ cout<<#v<<" = ";for(const auto&i : v) cout<<i<<" "; cout<<endl; }(v);
 
 
 int main() {
