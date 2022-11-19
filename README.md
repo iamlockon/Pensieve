@@ -9,6 +9,7 @@ To backup my memory of learnt knowledge...
 - [KMP](./algo/KMP.md)
 - [Morris traversal](./algo/Morris_traversal.md)
 - [Patience Sort](./algo/Patience_sort.md)
+- [Convex Hull](./algo/Convex_Hull.md)
 
 ### Data Structures
 
